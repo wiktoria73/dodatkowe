@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand)
+
+// style
+$color-green: #10b78b
+$color-white: #ffffff
+$color-pink: rgba(178, 69, 90, 0.5)
+$color-light: #f4f2f2
+
+
+body
+  margin: 0
+  font-family: 'Quicksand', sans-serif
+
+
+/* jumbotron */
+.jumbotron
+  background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=1260&h=750&auto=compress&cs=tinysrgb)
+  background-size: cover
+  height: 500px
+  color: $color-white
+  margin-bottom: 0
+  position: relative
+
+.styleButton
+  background-color: $color-green
+  color: $color-white
+
+.jumbotron i.fa
+  font-size: 20px
+  color: $color-white
+  padding: 10px
+
+.jumbotron-icon
+  position: absolute
+  bottom: 25px
+
+
+.jumbotron
+  li a
+    color: $color-white
+    &:hover
+      background-color: $color-pink
+
+
+/* sekcja z obrazkiem i guzikiem 1 */
+.content1
+  background-color: $color-light
+  padding: 70px 0
+
+/* sekcja z obrazkiem i guzikiem 2*/
+.content2 h3, .footer span, .content1 h3
+  font-weight: bold
+  color: $color-green
+
+.content2 img
+  width: 550px
+  height: 330px
+
+/* sekcja z karuzelą */
+.content3
+  background-color: $color-light
+  padding: 70px 0
+  h4
+    text-align: center
+    font-weight: bold
+  p
+    text-align: center
+  img
+  height: 220px
+  width: 400px
+
+.item img
+  max-height: 220px
+  width: 400px
+  background-size: cover
+
+.mono
+  width: 400px
+  height: 200px
+
+
+/* sekcja mail */
+.content4
+  background-image: url(https://images.pexels.com/photos/177513/pexels-photo-177513.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+  background-size: cover
+  height: 500px
+  h3
+    font-weight: bold
+    color: $color-white
+
+.flex-column
+  display: flex
+  flex-flow: column
+
+.flex-center
+  align-items: center
+  justify-content: center
+
+/* sekcja download */
+.content5
+  margin-top: 20px
+  text-align: center
+  a
+    margin: 10px
+    i.fa
+      font-size: 25px
+
+/* stopka */
+.footer
+  font-weight: bold
+  margin-top: 70px
+  span
+    font-weight: bold
+    color: $color-green
+
+.footer i.fa, .content3 i.fa
+  font-size: 50px
+  color: $color-green
+  float: right
+
+
+@media (max-width:768px)
+  .content1 img, .content2 img
+    display: inline-block
+    text-align: center
+
+  .content3, .content2, .content1
+    text-align: center
+
+  .footer
+    text-align: center
+    i.fa
+      display: none
+
+
+@media (max-width: 992px)
+  .content1 img, .content2 img
+    display: inline-block
+    text-align: center
+
+  .content3, .content2, .content1
+    text-align: center
+
+  .footer
+    text-align: center
+    i.fa
+      float: none
+      margin: 15px 0
